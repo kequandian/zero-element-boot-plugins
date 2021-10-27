@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 
 import SelectContainer from './index';
+// const SelectContainer = require('./index')
 
-import useTokenRequest from '@/components/hooks/useTokenRequest';
+import useTokenRequest from 'zero-element-boot/lib/hooks/useTokenRequest';
 
 import bindFiles from './gateway.json'
 
@@ -17,10 +18,6 @@ export default function (props) {
     }
 
     const [ data ] = useTokenRequest({api, bindFiles});
-
-    function onItemClick (data) {
-        onItemClickHandle(data)
-      }
 
     return (
         <div style={{background:'white'}}>

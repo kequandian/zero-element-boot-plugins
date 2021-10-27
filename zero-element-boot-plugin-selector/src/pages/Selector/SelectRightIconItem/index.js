@@ -1,5 +1,5 @@
 import React from 'react';
-const AutoComponent = require('zero-element-boot/lib');
+const { AutoComponent } = require('zero-element-boot/lib');
 
 const { Avatar, Title } = require('@/presenter');
 
